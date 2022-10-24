@@ -7,17 +7,18 @@ body{
 	background: rgb(37,37,34);
 	background: linear-gradient(173deg, rgba(37,37,34,1) 42%, #761652 100%);
 	font-family: 'Play', sans-serif;
-	overflow: hidden;
+	overflow: auto;
 	height: 100vh;
 
 }
 footer{
-	width: 100%;
-	height: 30em;
-	background: none;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+	    width: 100%;
+    height: 20%;
+    background: #212121;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 13em;
 
 }
 .desarrolladores{
@@ -247,7 +248,7 @@ ul a:hover {
 }
 #cardsItemsConteiner{
 	width: 100%;
-	height: 500px;
+	height: 70%;
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -264,7 +265,7 @@ transform-style: preserve-3d;
 
 }
 .cardFront, .cardBack {
-	height: 400px;
+	height: 141%;
   width: 95%;
   position: absolute;
   border-radius: 1rem;
@@ -292,7 +293,7 @@ transform-style: preserve-3d;
 	color: white;
 }
 .cardBack img{
-		width: 80%;
+		height: 50%;
 }
 
 #itemDetailContainer{
@@ -378,10 +379,15 @@ transform-style: preserve-3d;
 	color: #fff;
 	font-size: 4em;
 	animation: pulsate 0.01s linear infinite;
+	bottom: 50%;
 }
+.redContainer{
+		align-self: center;
+	}
 .devContainer{
-	    width: 15%;
-    height: 24%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 @keyframes welcome{
@@ -412,6 +418,7 @@ transform-style: preserve-3d;
 	transition: 0.5s;
 	color: #fff;
 	font-weight: 3em;
+	bottom: 30%;
 }
 .redesHome{
 	display: flex;
@@ -422,8 +429,8 @@ transform-style: preserve-3d;
 	right: 50%;
 }
 .redesHome img{
-	max-width: 50px;
-	height: 50px;
+	max-width: 3em;
+	height: 3em;
 	margin: 1vh;
 }
 .redesFooter{
@@ -571,7 +578,8 @@ transform-style: preserve-3d;
 	footer{
 		bottom: 0;
 		position: relative;
-		height: 15em;
+		height: 14em;
+		top: 7em;
 	}
 	body{
 		overflow: auto;
