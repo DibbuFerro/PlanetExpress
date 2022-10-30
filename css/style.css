@@ -390,6 +390,84 @@ transform-style: preserve-3d;
 	flex-direction: column;
 	align-items: center;
 }
+.formContainer{
+		width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 8%;
+    background: #212121;
+    border: solid 1px #fd008e;
+    color: #fd008e;
+    position: relative;
+    box-shadow: 0vh 0vh 10vh 1vh black;
+}
+.quienesSomos{
+	width: 100%;
+	height: 100%;
+	display: grid; 
+  grid-template-columns: 5% 60% 30% 5%; 
+  grid-template-rows: 15% 10% 30% 30% 15%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . ."
+    ". h3 h3 ."
+    ". img txt ."
+    ". img form ."
+    ". . . ."; 
+    text-align: center; 
+}
+.quienesSomos h3{
+	grid-area: h3;
+  justify-self: center;
+  position: relative;
+  bottom: 56%;
+}
+.quienesSomos img{
+	max-width: 82%;
+  grid-area: img;
+  align-self: center;
+  justify-self: center;
+  border-radius: 3%;
+}
+.quienesSomos p{
+	grid-area: txt;
+	font-size: 1.6vh;
+}
+#formulario{
+	position: relative;
+	margin: 3vh;
+	grid-area: form;
+	    align-self: center;
+    justify-self: center;
+}
+#email{
+ background: #fd008e;
+ color: #212121;
+}
+#email input{
+	border: #212121;
+}
+
+#usuario{
+ background: #fd008e;
+ color: #212121;
+}
+.submitBtn{
+	font-size: 1.3vh;
+	margin: 1vh;
+	background: #212121;
+	border-radius: 5%;
+	border: solid #fd008e;
+	color: #fd008e;
+	cursor: pointer;
+	width: 14vh;
+  height: 4vh;
+  transition: linear 0.2s;
+}
+.submitBtn:hover{
+	background: #fd008e;
+	color: #212121;
+}
 
 @keyframes welcome{
 	0% {
@@ -621,8 +699,7 @@ transform-style: preserve-3d;
     justify-content: space-evenly;
     flex-wrap: wrap;
 	}
-} 
-.formContainer{
+	.formContainer{
 		width: 80%;
     height: 60%;
     left: 10%;
@@ -633,70 +710,26 @@ transform-style: preserve-3d;
     position: relative;
     box-shadow: 0vh 0vh 10vh 1vh black;
 }
-.quienesSomos{
-	width: 100%;
-	height: 100%;
-	display: grid; 
-  grid-template-columns: 5% 60% 30% 5%; 
-  grid-template-rows: 15% 10% 30% 30% 15%; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". . . ."
-    ". h3 h3 ."
-    ". img txt ."
-    ". img form ."
-    ". . . ."; 
-    text-align: center; 
-}
-.quienesSomos h3{
-	grid-area: h3;
-  justify-self: center;
-  position: relative;
-  bottom: 56%;
-}
-.quienesSomos img{
-	max-width: 82%;
-  grid-area: img;
-  align-self: center;
-  justify-self: center;
-  border-radius: 3%;
-}
-.quienesSomos p{
-	grid-area: txt;
-	font-size: 1.6vh;
-}
-#formulario{
-	position: relative;
-	margin: 3vh;
-	grid-area: form;
-	    align-self: center;
-    justify-self: center;
-}
-#email{
- background: #fd008e;
- color: #212121;
-}
-#email input{
-	border: #212121;
-}
-
-#usuario{
- background: #fd008e;
- color: #212121;
-}
-.submitBtn{
-	font-size: 1.3vh;
-	margin: 1vh;
-	background: #212121;
-	border-radius: 5%;
-	border: solid #fd008e;
-	color: #fd008e;
-	cursor: pointer;
-	width: 14vh;
-  height: 4vh;
-  transition: linear 0.2s;
-}
-.submitBtn:hover{
-	background: #fd008e;
-	color: #212121;
-}
+	.quienesSomos{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	} 
+	.quienesSomos p{
+		scale: 0.8;
+	}
+	.itemDetail{
+		top: 11vh;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		height: 60vh;
+	}
+	#itemDetailContent{
+		height: 20vh;
+		justify-content: space-around;
+	}
+} 
