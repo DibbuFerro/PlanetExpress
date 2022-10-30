@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="icon" type="image/png" href="src/favIcon.png">
+	<link rel="icon" type="image/png" href="../src/favIcon.png">
 
 
 	<title>PLANEET EXPRESS</title>
@@ -52,17 +52,29 @@
 </div>
 </div>
 <div class="formContainer">
-	<form action="/login.php" id="formulario">
-    <p>
-      Usuario: <input type="text" name="usuario" id="usuario">
-    </p>
-    <p>
-      Clave: <input type="text" name="clave" id="clave">
-    </p>
-    <input type="submit" value="Entrar">
-  </form>
+	<div class="quienesSomos">
+		<h3>¿QUIENES SOMOS?</h3>
+			<p>La empresa ha sido creada por su actual gerente, el Profesor Hubert J. Farnsworth, cuyo trabajo principal es el de profesor en la Universidad de Marte, para financiar sus investigaciones e inventos. Originalmente nos dedicamos a la mensajeria intergalactica, pero debido a la gran crisis de economica generada por la Nebulosa Tempestad nos vimos en obligacion de cambiar el rubro de nuestra empresa hacia una compania de viajes intergalacticos. Si desea recibir notificaciones de ofertas y nuevos destinos, por favor deje aqui su Nombre y Email para contactarlo</p>
+			<img src="../src/heroimg.jpg">
+	
+		<form id="formulario">
+		    <table cellspacing="2" cellpadding="2" >
+		      <tr>
+		        <td align="right">Nombre</td>
+		        <td><input type="text" id="usuario" /></td>
+		      </tr>
+		      <tr>
+		        <td align="right">Email</td>
+		        <td><input type="text" id="email" /></td>
+		      </tr>
+		      <tr>
+		        <td></td>
+		        <td><input type="submit" value="CONTACTENME" id="btn-enviar" class="submitBtn" /> </td>
+		      </tr>
+		    </table>
+		</form>
+	</div>
 </div>
-
 <footer>
 	<div class="redConteiner">
 		<h3>Nuestras Redes</h3>
@@ -83,10 +95,7 @@
 	</div>
 
 </footer>
-
-
-
-
-<script src="js/script.js"></script>
+ 
+<script src="../js/formulario.js"></script>
 </body>
 </html>
